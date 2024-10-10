@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
+import { getAuth } from 'firebase/auth'
 
 const config = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -11,11 +12,8 @@ const config = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 }
 
-class Firebase {
-  constructor() {
-    this.app = initializeApp(config)
-    this.db = getFirestore()
-  }
-}
+const app = initializeApp(config)
+const db = getFirestore()
+const auth = getAuth()
 
-export default Firebase
+export { app, db, auth }

@@ -17,7 +17,7 @@ function Header() {
   return (
     <AppBar
       elevation={4}
-      sx={{ bgcolor: 'background.paper', color: 'inherit' }}
+      sx={{ bgcolor: 'background.paper', color: 'inherit', borderRadius: 0 }}
     >
       <Toolbar disableGutters sx={{ justifyContent: 'space-between', p: 0.8 }}>
         <Box display="flex" height={48} alignItems="stretch">

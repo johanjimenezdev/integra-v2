@@ -65,13 +65,6 @@ const theme = createTheme({
       defaultProps: {
         disableElevation: true
       }
-    },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          borderRadius: '1rem'
-        }
-      }
     }
   },
   spacing: 10
